@@ -18,12 +18,12 @@ function currentLine(line) {
   if(line.length > 0){
     var lineStatus = "The line is currently:";
     
-    for(var i = 0; i < line.length; i++) {
-      lineStatus += ` ${i+1}. ${line[i]}`
-      if(i < line.length-1) {
-        lineStatus += ",";
-      }
-    }
+    // for(var i = 0; i < line.length; i++) {
+    //   lineStatus += ` ${i+1}. ${line[i]}`
+    //   if(i < line.length-1) {
+    //     lineStatus += ",";
+    //   }
+    // }
     
     var lineStatus = "The line is currently: ";
     
