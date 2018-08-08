@@ -1,7 +1,8 @@
 function takeANumber(currentLine) {
   // var position = currentLine.length + 1;
   // currentLine.push(name);
-  currentLine.push(`Person${currentLine.length + 1}`)
+  
+  currentLine.push(`${parseInt(currentLine[currentLine.length-1]) + 1}`);
   return `You are number ${currentLine.length} in line.`;
 }
 
@@ -11,7 +12,7 @@ function nowServing(line) {
     line.shift();
     return `Currently serving ${firstPerson}.`;
   } else {
-    return "There is nobody waiting to be served!"
+    return "There is nobody waiting to be served!";
   }
 }
 
