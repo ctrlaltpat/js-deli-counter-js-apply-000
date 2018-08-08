@@ -1,7 +1,8 @@
-function takeANumber(currentLine, name) {
-  var position = currentLine.length + 1;
-  currentLine.push(name);
-  return `Welcome, ${name}. You are number ${position} in line.`;
+function takeANumber(currentLine) {
+  // var position = currentLine.length + 1;
+  // currentLine.push(name);
+  currentLine.push(`Person${currentLine.length + 1}`)
+  return `You are number ${currentLine.length} in line.`;
 }
 
 function nowServing(line) {
@@ -16,7 +17,7 @@ function nowServing(line) {
 
 function currentLine(line) {
   if(line.length > 0){
-    var lineStatus = "The line is currently:";
+    //var lineStatus = "The line is currently:";
     
     // for(var i = 0; i < line.length; i++) {
     //   lineStatus += ` ${i+1}. ${line[i]}`
